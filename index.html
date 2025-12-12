@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="coletor_test" content="width=device-width, initial-scale=1.0">
+    <title>coletor_test</title>
+    <link rel="stylesheet" href= https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+    <link rel="stylesheet" href="/teste_coletor/style.css">
+</head>
+
+<body>
+    <header>
+
+        <h1 id=" texto">Consulta de UC's</h1>
+
+    </header>  
+    
+    <main>
+         
+        <Div class="container">
+            <form>
+                <div class="input-group">
+
+                    <input type="text" id="ucInput" name="Input" oninput="pesquisarUCS()" placeholder= "Insira uma UC:" autocomplete="off" >
+
+                        <div class = "input-icon">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>    
+
+                        </div> 
+                </div> 
+             </form> 
+
+                <div id="dados" class="dados">
+                <table id="resultados" class="resultados" ; width100%>
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Descrição Breve</th>
+                            <th>QTD</th>
+                            <th>UMA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+                <p id="no-results">UC não encontrada</p>
+                </div> 
+
+
+        </Div>    
+    </main>     
+   <script src="/teste_coletor/script.js"></script>     
+</body>
+</html>
